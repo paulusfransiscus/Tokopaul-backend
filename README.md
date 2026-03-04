@@ -1,32 +1,81 @@
-# TokoPaul Backend API
+# 🏪 TokoPaul Backend API
 
-Backend untuk aplikasi e-commerce TokoPaul dengan Node.js, Express, MySQL, dan JWT.
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![Express](https://img.shields.io/badge/Express-4.18.x-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
+![JWT](https://img.shields.io/badge/JWT-Auth-purple)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Fitur
+Backend API untuk aplikasi e-commerce TokoPaul dengan sistem keamanan tinggi menggunakan Node.js, Express, MySQL, dan JWT.
 
-- 🔐 Authentication dengan JWT & Refresh Token
-- 👥 Role-based access control (User & Admin)
-- 📧 Email verification & Password reset
-- 🛒 Shopping cart management
-- 📦 Order management
-- 🖼️ File upload
-- 📊 Activity logging
-- 🚦 Rate limiting
-- 🔒 Security best practices (Helmet, CORS, etc.)
+## ✨ Fitur Unggulan
 
-## Tech Stack
+### 🔐 Keamanan
+- ✅ Authentication dengan JWT & Refresh Token
+- ✅ Password hashing dengan bcrypt
+- ✅ Rate limiting untuk mencegah brute force
+- ✅ Account locking setelah 5x gagal login
+- ✅ Email verification
+- ✅ Session management dengan Redis
+- ✅ CSRF protection
+- ✅ XSS protection
 
-- Node.js
-- Express.js
-- MySQL dengan Sequelize ORM
-- Redis untuk session store
-- JWT untuk authentication
-- Bcrypt untuk password hashing
-- Nodemailer untuk email
+### 👥 Manajemen User
+- ✅ Register & Login
+- ✅ Profil management
+- ✅ Change password
+- ✅ Forgot & reset password
+- ✅ Role-based access (User & Admin)
 
-## Instalasi
+### 🛒 E-commerce
+- ✅ Product catalog
+- ✅ Shopping cart
+- ✅ Order management
+- ✅ Stock management
+- ✅ Payment integration ready
 
-### Prerequisites
-- Node.js >= 14
-- MySQL >= 5.7
-- Redis >= 6
+### 📊 Admin Features
+- ✅ User management (CRUD)
+- ✅ Product management (CRUD)
+- ✅ Order management
+- ✅ Dashboard statistics
+- ✅ Activity logs
+
+### 🚀 Performance
+- ✅ Redis caching
+- ✅ Database indexing
+- ✅ Pagination
+- ✅ Compression
+- ✅ Rate limiting
+
+## 🛠️ Tech Stack
+
+| Komponen | Teknologi |
+|----------|-----------|
+| Runtime | Node.js |
+| Framework | Express.js |
+| Database | MySQL dengan Sequelize ORM |
+| Caching | Redis |
+| Authentication | JWT |
+| Password Hashing | bcrypt |
+| Email | Nodemailer |
+| File Upload | Express Fileupload |
+| Validation | Express Validator |
+| Logging | Winston & Morgan |
+| Security | Helmet, CORS |
+
+## 📋 Prasyarat
+
+Sebelum memulai, pastikan Anda telah menginstal:
+
+- [Node.js](https://nodejs.org/) (v14 atau lebih baru)
+- [MySQL](https://www.mysql.com/) (v5.7 atau lebih baru)
+- [Redis](https://redis.io/) (v6 atau lebih baru)
+- [Git](https://git-scm.com/)
+
+## 🚀 Cara Instalasi
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/username/tokopaul-backend.git
+cd tokopaul-backend
